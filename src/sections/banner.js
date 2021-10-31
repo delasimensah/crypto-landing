@@ -3,8 +3,6 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import { Container, Box, Heading, Text, Button, Link } from "theme-ui";
 import { IoIosPlayCircle } from "react-icons/io";
-import BannerImage from "assets/banner-1.png";
-
 const ModalVideo = dynamic(import("react-modal-video"), { ssr: false });
 
 const BANNER_DATA = {
@@ -18,7 +16,7 @@ const BANNER_DATA = {
     link: "#",
     label: "White paper",
   },
-  bannerImage: BannerImage,
+  bannerImage: "/assets/banner-1.png",
 };
 
 const Banner = () => {

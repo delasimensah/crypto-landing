@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Box, Flex, Heading, Text, Image as Img } from "theme-ui";
-import icon1 from "assets/why-choose-1.svg";
-import icon2 from "assets/why-choose-2.svg";
-import icon3 from "assets/why-choose-3.svg";
-import icon4 from "assets/why-choose-4.svg";
+// import icon1 from "assets/why-choose-1.svg";
+// import icon2 from "/assets/why-choose-2.svg";
+// import icon3 from "/assets/why-choose-3.svg";
+// import icon4 from "/assets/why-choose-4.svg";
 
 const WHY_CHOOSE_DATA = {
   blockTitle: {
@@ -12,22 +12,22 @@ const WHY_CHOOSE_DATA = {
   },
   posts: [
     {
-      icon: icon1,
+      icon: "/assets/why-choose-1.svg",
       title: "Great Market Value",
       text: "Lorem ipsum dolor sit amet with consectetur adipisicing elit the help eiusmod tempor.",
     },
     {
-      icon: icon2,
+      icon: "/assets/why-choose-2.svg",
       title: "Verified Mining Process",
       text: "Lorem ipsum dolor sit amet with consectetur adipisicing elit the help eiusmod tempor.",
     },
     {
-      icon: icon3,
+      icon: "/assets/why-choose-3.svg",
       title: "Fastest Miner",
       text: "Lorem ipsum dolor sit amet with consectetur adipisicing elit the help eiusmod tempor.",
     },
     {
-      icon: icon4,
+      icon: "/assets/why-choose-4.svg",
       title: "Secure Transaction",
       text: "Lorem ipsum dolor sit amet with consectetur adipisicing elit the help eiusmod tempor.",
     },

@@ -1,28 +1,27 @@
-import Image from 'next/image';
-import { Box, Container, Heading, Text, Image as Img } from 'theme-ui';
-import map from 'assets/map.png';
-import flag1 from 'assets/uk-flag.svg';
-import flag2 from 'assets/south-africa-flag.svg';
-import flag3 from 'assets/spain-flag.svg';
+import Image from "next/image";
+import { Box, Container, Heading, Text, Image as Img } from "theme-ui";
+// import map from "/assets/map.png";
+// import flag1 from "/assets/uk-flag.svg";
+// import flag2 from "/assets/south-africa-flag.svg";
+// import flag3 from "/assets/spain-flag.svg";
 
 const WORLDWIDE_USER_DATA = {
-  image: map,
-  title: 'We have more than 3 Bilion worldwide user',
-  text:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt labore dolore',
-  tagline: 'Licensed gambling jurisdictions',
+  image: "/assets/map.png",
+  title: "We have more than 3 Bilion worldwide user",
+  text: "Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt labore dolore",
+  tagline: "Licensed gambling jurisdictions",
   posts: [
     {
-      icon: flag1,
-      label: 'United Kingdom',
+      icon: "/assets/uk-flag.svg",
+      label: "United Kingdom",
     },
     {
-      icon: flag2,
-      label: 'South Africa',
+      icon: "/assets/south-africa-flag.svg",
+      label: "South Africa",
     },
     {
-      icon: flag3,
-      label: 'Spain',
+      icon: "/assets/spain-flag.svg",
+      label: "Spain",
     },
   ],
 };
@@ -57,59 +56,59 @@ export default WorldwideUsers;
 
 const styles = {
   section: {
-    pb: ['65px', '75px', null, '85px', '115px', null, '135px', '160px'],
+    pb: ["65px", "75px", null, "85px", "115px", null, "135px", "160px"],
   },
   content: {
-    textAlign: 'center',
-    maxWidth: ['auto', null, '480px', '600px'],
-    mx: ['auto'],
+    textAlign: "center",
+    maxWidth: ["auto", null, "480px", "600px"],
+    mx: ["auto"],
     h2: {
-      fontSize: ['24px', null, '28px', '30px'],
+      fontSize: ["24px", null, "28px", "30px"],
       lineHeight: [1.4, null, null, 1.6],
-      color: 'heading',
-      mb: ['12px', null, '15px'],
-      mx: [null, 'auto', null, 0],
+      color: "heading",
+      mb: ["12px", null, "15px"],
+      mx: [null, "auto", null, 0],
     },
     p: {
-      fontSize: ['15px', null, '16px'],
+      fontSize: ["15px", null, "16px"],
       lineHeight: [1.9, null, 2.12],
-      color: 'body',
-      px: [0, null, null, '50px'],
-      mb: ['30px', null, '35px', '40px', '45px', '52px'],
+      color: "body",
+      px: [0, null, null, "50px"],
+      mb: ["30px", null, "35px", "40px", "45px", "52px"],
     },
     span: {
-      fontSize: ['15px', null, '16px'],
-      color: 'body',
+      fontSize: ["15px", null, "16px"],
+      color: "body",
       fontWeight: 500,
     },
   },
   flags: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    alignItems: 'center',
-    ml: ['-20px', '-30px', null, null, '-40px'],
-    mt: ['20px', null, '25px', '30px'],
-    mb: ['30px', null, '50px', '60px', '65px', '75px'],
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    alignItems: "center",
+    ml: ["-20px", "-30px", null, null, "-40px"],
+    mt: ["20px", null, "25px", "30px"],
+    mb: ["30px", null, "50px", "60px", "65px", "75px"],
   },
   flag: {
-    ml: ['20px', '30px', null, null, '40px'],
-    mb: ['15px', null, 0],
-    display: 'flex',
-    alignItems: 'center',
+    ml: ["20px", "30px", null, null, "40px"],
+    mb: ["15px", null, 0],
+    display: "flex",
+    alignItems: "center",
     img: {
-      mr: '10px',
-      width: ['22px', '27px'],
-      height: ['22px', '27px'],
+      mr: "10px",
+      width: ["22px", "27px"],
+      height: ["22px", "27px"],
     },
     h3: {
-      color: 'heading',
-      fontSize: ['14px', null, '15px'],
+      color: "heading",
+      fontSize: ["14px", null, "15px"],
       fontWeight: 400,
     },
   },
   map: {
-    textAlign: 'center',
-    display: 'block',
+    textAlign: "center",
+    display: "block",
   },
 };
