@@ -1,13 +1,13 @@
-import React, { useContext } from 'react';
-import { Button, Box } from 'theme-ui';
-import { Scrollbars } from 'react-custom-scrollbars';
-import Drawer from 'components/drawer';
-import { DrawerContext } from 'contexts/drawer/drawer.context';
-import { IoMdClose, IoMdMenu } from 'react-icons/io';
-import { Link as ScrollLink } from 'react-scroll';
-import MENU_DATA from './header.data';
-import Logo from 'components/logo';
-import logoDark from 'assets/logo.svg';
+import React, { useContext } from "react";
+import { Button, Box } from "theme-ui";
+import { Scrollbars } from "react-custom-scrollbars";
+import Drawer from "components/drawer";
+import { DrawerContext } from "contexts/drawer/drawer.context";
+import { IoMdClose, IoMdMenu } from "react-icons/io";
+import { Link as ScrollLink } from "react-scroll";
+import MENU_DATA from "./header.data";
+// import Logo from 'components/logo';
+// import logoDark from 'assets/logo.svg';
 
 const MobileDrawer = () => {
   const { state, dispatch } = useContext(DrawerContext);
@@ -15,7 +15,7 @@ const MobileDrawer = () => {
   // Toggle drawer
   const toggleHandler = React.useCallback(() => {
     dispatch({
-      type: 'TOGGLE',
+      type: "TOGGLE",
     });
   }, [dispatch]);
 
@@ -35,7 +35,7 @@ const MobileDrawer = () => {
     >
       <Scrollbars autoHide>
         <Box sx={styles.content}>
-          <Logo image={logoDark} />
+          <h2>Digi Crypto</h2>
           <Box sx={styles.menu}>
             {MENU_DATA.map(({ path, label }, i) => (
               <ScrollLink
@@ -65,87 +65,87 @@ const MobileDrawer = () => {
 
 const styles = {
   handler: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexShrink: '0',
-    width: '26px',
-    cursor: 'pointer',
-    '@media screen and (min-width: 1024px)': {
-      display: 'none',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexShrink: "0",
+    width: "26px",
+    cursor: "pointer",
+    "@media screen and (min-width: 1024px)": {
+      display: "none",
     },
   },
 
   drawer: {
-    width: '100%',
-    height: '100%',
-    background: '#fff',
+    width: "100%",
+    height: "100%",
+    background: "#fff",
   },
 
   close: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'absolute',
-    cursor: 'pointer',
-    top: '36px',
-    right: '30px',
-    zIndex: '1',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "absolute",
+    cursor: "pointer",
+    top: "36px",
+    right: "30px",
+    zIndex: "1",
   },
 
   content: {
-    width: '100%',
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    pt: '30px',
-    pb: '40px',
-    px: '30px',
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    pt: "30px",
+    pb: "40px",
+    px: "30px",
   },
 
   menu: {
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    marginTop: '30px',
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    marginTop: "30px",
 
     a: {
-      fontSize: '16px',
-      fontWeight: '400',
-      color: 'black',
+      fontSize: "16px",
+      fontWeight: "400",
+      color: "black",
       py: 2,
-      cursor: 'pointer',
-      transition: 'all 0.3s',
-      '&:hover, &:focus': {
-        color: 'primary',
+      cursor: "pointer",
+      transition: "all 0.3s",
+      "&:hover, &:focus": {
+        color: "primary",
       },
     },
   },
 
   menuFooter: {
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    mt: 'auto',
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    mt: "auto",
   },
 
   button: {
-    fontSize: '15px',
-    fw: '700',
-    height: '48px',
-    borderRadius: '3px',
-    cursor: 'pointer',
-    width: '100%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    py: '0',
-    backgroundColor: 'black',
-    color: '#fff',
-    fontFamily: 'body',
-    transition: 'all 0.25s',
-    '&:hover': {
+    fontSize: "15px",
+    fw: "700",
+    height: "48px",
+    borderRadius: "3px",
+    cursor: "pointer",
+    width: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    py: "0",
+    backgroundColor: "black",
+    color: "#fff",
+    fontFamily: "body",
+    transition: "all 0.25s",
+    "&:hover": {
       opacity: 0.85,
     },
   },

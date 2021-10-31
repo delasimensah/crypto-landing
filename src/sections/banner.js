@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import { Container, Box, Heading, Text, Button, Link } from "theme-ui";
-// import ModalVideo from 'react-modal-video';
 import { IoIosPlayCircle } from "react-icons/io";
 import BannerImage from "assets/banner-1.png";
+
+const ModalVideo = dynamic(import("react-modal-video"), { ssr: false });
+
 const BANNER_DATA = {
   title: "Welcome to next level Cryptocurrencies Token with faster transfer",
   text: "We helps brands & agencies manage top-performing influencer programs: talent discovery & qualification, relationship management, automated campaign reporting, performance measurement and competitive benchmarking.",
@@ -20,11 +23,14 @@ const BANNER_DATA = {
 
 const Banner = () => {
   const { title, text, button, videoBtn, bannerImage } = BANNER_DATA;
+
   const [videoOpen, setVideoOpen] = useState(false);
+
   const handleClick = (e) => {
     e.preventDefault();
     setVideoOpen(true);
   };
+
   return (
     <Box as="section" id="banner" sx={styles.section}>
       <Container sx={styles.container}>
@@ -37,12 +43,13 @@ const Banner = () => {
             </Link>
 
             <>
-              {/* <ModalVideo
+              <ModalVideo
                 channel="youtube"
                 isOpen={videoOpen}
-                videoId="ZNA9rmDsYVE"
+                videoId="S5r1cvQwFD0"
                 onClose={() => setVideoOpen(false)}
-              /> */}
+              />
+
               <Button sx={styles.videoBtn} onClick={handleClick}>
                 {videoBtn.label}
                 <IoIosPlayCircle />

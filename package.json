@@ -23,5 +23,10 @@
     "react-stickynode": "^4.0.0",
     "react-waypoint": "^10.1.0",
     "theme-ui": "^0.12.0"
+  },
+  "devDependencies": {
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^10.0.0"
   }
 }
